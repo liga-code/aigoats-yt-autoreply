@@ -4,9 +4,15 @@
 import { createServer } from "node:http";
 import { exec } from "node:child_process";
 
-const [clientId, clientSecret] = process.argv.slice(2);
+import { readFileSync, existsSync } from "node:fs";
+// Dane klienta: z argumentów albo z pliku client.json (pobranego z Google Cloud, nie trafia do repo).
+let [clientId, clientSecret] = process.argv.slice(2);
+if (!clientId && existsSync("client.json")) {
+  const c = JSON.parse(readFileSync("client.json", "utf8"));
+  ({ client_id: clientId, client_secret: clientSecret } = c.installed || c.web || {});
+}
 if (!clientId || !clientSecret) {
-  console.error("Użycie: node src/autoryzacja.mjs <CLIENT_ID> <CLIENT_SECRET>");
+  console.error("Użycie: node src/autoryzacja.mjs [CLIENT_ID CLIENT_SECRET]  (albo plik client.json w katalogu repo)");
   process.exit(1);
 }
 const PORT = 8765;

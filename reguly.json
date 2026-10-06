@@ -1,0 +1,20 @@
+[
+  {
+    "nazwa": "Walrus Memory",
+    "keywords": ["pamięć", "pamiec", "memory"],
+    "videoIds": [],
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto linki do Walrus Memory:\n\n- https://memory.walrus.xyz – tu zakładasz konto (na start za darmo)\n- https://docs.wal.app/walrus-memory – instrukcja, jak podłączyć pamięć do Claude, ChatGPT i innych narzędzi\n\nDaj znać, jak u Ciebie działa! Zespół AI GOATS"
+  },
+  {
+    "nazwa": "Google Skills",
+    "keywords": ["google"],
+    "videoIds": [],
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto link do Google Skills:\n\n- https://github.com/google/skills – 150 oficjalnych skilli Google dla Claude (Firebase, Google Ads, Analytics, Gemini) z instrukcją instalacji\n\nDaj znać, którego używasz najczęściej! Zespół AI GOATS"
+  },
+  {
+    "nazwa": "Everything Claude Code",
+    "keywords": ["ecc"],
+    "videoIds": [],
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto link do Everything Claude Code:\n\n- https://github.com/affaan-m/ECC – setup zwycięzcy hackathonu Anthropic: agenci, skille, hooki i serwery MCP, z instrukcją instalacji\n\nDaj znać, jak się sprawdza! Zespół AI GOATS"
+  }
+]

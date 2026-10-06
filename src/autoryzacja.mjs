@@ -4,7 +4,7 @@
 import { createServer } from "node:http";
 import { exec } from "node:child_process";
 
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, writeFileSync } from "node:fs";
 // Dane klienta: z argumentów albo z pliku client.json (pobranego z Google Cloud, nie trafia do repo).
 let [clientId, clientSecret] = process.argv.slice(2);
 if (!clientId && existsSync("client.json")) {
@@ -38,7 +38,12 @@ createServer(async (req, res) => {
   res.writeHead(200, { "Content-Type": "text/plain; charset=utf-8" });
   if (j.refresh_token) {
     res.end("Gotowe — możesz zamknąć to okno i wrócić do terminala.");
-    console.log("\nYT_REFRESH_TOKEN=" + j.refresh_token + "\n");
+    if (process.env.TOKEN_FILE) {
+      writeFileSync(process.env.TOKEN_FILE, j.refresh_token);
+      console.log("\nZapisano refresh token do pliku " + process.env.TOKEN_FILE + "\n");
+    } else {
+      console.log("\nYT_REFRESH_TOKEN=" + j.refresh_token + "\n");
+    }
   } else {
     res.end("Nie udało się: " + JSON.stringify(j));
     console.error(j);

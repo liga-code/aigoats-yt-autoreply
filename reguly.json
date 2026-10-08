@@ -1,20 +1,44 @@
 [
   {
     "nazwa": "Walrus Memory",
-    "keywords": ["pamięć", "pamiec", "memory"],
+    "keywords": [
+      "pamięć",
+      "pamiec",
+      "memory"
+    ],
     "videoIds": [],
     "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto linki do Walrus Memory:\n\n- https://memory.walrus.xyz – tu zakładasz konto (na start za darmo)\n- https://docs.wal.app/walrus-memory – instrukcja, jak podłączyć pamięć do Claude, ChatGPT i innych narzędzi\n\nDaj znać, jak u Ciebie działa! Zespół AI GOATS"
   },
   {
     "nazwa": "Google Skills",
-    "keywords": ["google"],
+    "keywords": [
+      "google"
+    ],
     "videoIds": [],
     "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto link do Google Skills:\n\n- https://github.com/google/skills – 150 oficjalnych skilli Google dla Claude (Firebase, Google Ads, Analytics, Gemini) z instrukcją instalacji\n\nDaj znać, którego używasz najczęściej! Zespół AI GOATS"
   },
   {
     "nazwa": "Everything Claude Code",
-    "keywords": ["ecc"],
+    "keywords": [
+      "ecc"
+    ],
     "videoIds": [],
     "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto link do Everything Claude Code:\n\n- https://github.com/affaan-m/ECC – setup zwycięzcy hackathonu Anthropic: agenci, skille, hooki i serwery MCP, z instrukcją instalacji\n\nDaj znać, jak się sprawdza! Zespół AI GOATS"
+  },
+  {
+    "nazwa": "5 funkcji Claude",
+    "keywords": [
+      "claude"
+    ],
+    "videoIds": [],
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto linki do wszystkich pięciu funkcji:\n\n- https://claude.com/product/claude-code – Claude Code, agent AI w terminalu\n- https://claude.com/product/cowork – Cowork, praca na plikach i zaplanowane zadania\n- https://claude.com/claude-in-chrome – Claude in Chrome, Claude działa w przeglądarce\n- https://claude.com/product/design – Claude Design, prototypy i prezentacje\n- https://support.claude.com/en/articles/9517075-what-are-projects – Projekty, Twoje pliki pod ręką w każdej rozmowie\n\nDaj znać, od której zaczynasz! Zespół AI GOATS"
+  },
+  {
+    "nazwa": "Darmowe API",
+    "keywords": [
+      "api"
+    ],
+    "videoIds": [],
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto linki do wszystkich trzech stron:\n\n- https://bytez.com – Bytez, jeden klucz API do ponad 100 modeli\n- https://build.nvidia.com/models – NVIDIA NIM, darmowe modele (m.in. Kimi, GLM, DeepSeek), do 40 zapytań na minutę\n- https://openrouter.ai/models?max_price=0 – OpenRouter, lista darmowych modeli\n\nDaj znać, od którego zaczynasz! Zespół AI GOATS"
   }
 ]

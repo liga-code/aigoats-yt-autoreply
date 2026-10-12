@@ -40,5 +40,13 @@
     ],
     "videoIds": [],
     "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto linki do wszystkich trzech stron:\n\n- https://bytez.com – Bytez, jeden klucz API do ponad 100 modeli\n- https://build.nvidia.com/models – NVIDIA NIM, darmowe modele (m.in. Kimi, GLM, DeepSeek), do 40 zapytań na minutę\n- https://openrouter.ai/models?max_price=0 – OpenRouter, lista darmowych modeli\n\nDaj znać, od którego zaczynasz! Zespół AI GOATS"
+  },
+  {
+    "nazwa": "Second brain (NotebookLM)",
+    "keywords": [
+      "brain"
+    ],
+    "videoIds": [],
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto link do projektu, który łączy NotebookLM z agentami AI:\n\n- https://github.com/teng-lin/notebooklm-py — nieoficjalna biblioteka i skill dla Claude Code, Codex i innych agentów\n\nZespół AI GOATS"
   }
 ]

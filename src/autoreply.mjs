@@ -73,7 +73,9 @@ async function main() {
       }
       if (replies.some((c) => c.snippet.authorChannelId?.value === me.id)) continue;
 
-      console.log(`→ [${rule.nazwa}] ${top.authorDisplayName}: "${(top.textOriginal || "").slice(0, 80)}" (film ${th.snippet.videoId})`);
+      // Bez nazwy autora i treści komentarza: logi repo są publiczne, a polityka prywatności
+      // obiecuje, że cudzych komentarzy nie przechowujemy (YouTube Developer Policies III.E.4.d).
+      console.log(`→ [${rule.nazwa}] wątek ${th.id} (film ${th.snippet.videoId})`);
       if (!DRY) {
         await yt(token, "comments", { part: "snippet" }, { method: "POST", body: JSON.stringify({ snippet: { parentId: th.id, textOriginal: rule.odpowiedz } }) });
       }

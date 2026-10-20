@@ -1,4 +1,9 @@
-# Automat odpowiedzi na komentarze — YouTube AI GOATS
+# Automat odpowiedzi na komentarze — YouTube AI GOATS (PL i EN)
+
+> Od 2026-10-20: dwa kanały (macierz `kanal: [pl, en]` w workflow; EN — sekret `YT_EN_REFRESH_TOKEN`, reguły `reguly-en.json`)
+> oraz **pierwszy komentarz** pod nowym filmem: `yt.mjs --komentarz <plik.txt>` (repo aigoats-publikacje) dopisuje wpis do
+> `pierwsze-komentarze.json`, a automat dodaje komentarz, gdy zaplanowany film stanie się publiczny (bez dublowania).
+> Reguła z `"aktywna": false` czeka na akceptację / link i jest pomijana.
 
 Gdy ktoś pod rolką AI GOATS napisze słowo z CTA (np. „PAMIĘĆ”), automat w ciągu ~15–30 minut
 odpowiada mu w wątku gotowym tekstem z linkami. Bez serwera, bez opłat.

@@ -1,5 +1,7 @@
 name: Odpowiedzi na komentarze YouTube
 
+# Dwa kanały: AI GOATS (PL) i AI GOATS EN — ten sam skrypt, osobny token i plik reguł.
+# Każdy przebieg: odpowiedzi na słowa z CTA + pierwsze komentarze z kolejki (pierwsze-komentarze.json).
 on:
   schedule:
     - cron: "*/15 * * * *" # co 15 minut (GitHub potrafi opóźnić start o kilka–kilkanaście minut)
@@ -18,6 +20,10 @@ jobs:
   odpowiedz:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        kanal: [pl, en]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,7 +31,8 @@ jobs:
           node-version: 22
       - run: node src/autoreply.mjs
         env:
+          KANAL: ${{ matrix.kanal }}
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
-          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          YT_REFRESH_TOKEN: ${{ matrix.kanal == 'en' && secrets.YT_EN_REFRESH_TOKEN || secrets.YT_REFRESH_TOKEN }}
           DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && '1' || '0' }}

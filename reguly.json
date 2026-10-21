@@ -48,5 +48,16 @@
     ],
     "videoIds": [],
     "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto link do projektu, który łączy NotebookLM z agentami AI:\n\n- https://github.com/teng-lin/notebooklm-py — nieoficjalna biblioteka i skill dla Claude Code, Codex i innych agentów\n\nZespół AI GOATS"
+  },
+  {
+    "nazwa": "Film z jednego promptu",
+    "keywords": [
+      "prompt"
+    ],
+    "videoIds": [
+      "tBMv4ZAKHRQ"
+    ],
+    "aktywna": true,
+    "odpowiedz": "Cześć, dzięki za komentarz! 🙌 Oto poradnik krok po kroku:\n\n- https://aigoats.eu/akademia/poradniki/claude-code/film-z-jednego-promptu – instalacja, gotowy prompt i render filmu\n\nDaj znać, jak Ci poszło! Zespół AI GOATS"
   }
 ]
